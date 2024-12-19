@@ -1,0 +1,84 @@
+/* Commons */
+
+.my-checkbox {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.modal-content h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+  }
+  
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+  
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+  
+
+.form-group2 {
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.form-group2 label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+    
+.form-group2 input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-left: 5px
+}
+    
+.btn {
+  padding: 5px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: none;
+}
+
+.save-btn {
+  background-color: #7DC4C6;
+  color: white;
+  margin-right: 10px;
+}
+
+.save-btn:hover {
+  background-color: #61DCF5;
+}
+
+.cancel-btn {
+  background-color: #F0909E;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background-color: #F4BCBB;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+

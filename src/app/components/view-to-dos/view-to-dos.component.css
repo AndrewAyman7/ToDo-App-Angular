@@ -1,0 +1,56 @@
+::ng-deep thead {
+    background-color: #ADD8E6;
+    font-size: 20px;
+    font-weight: bold;
+    color: #16537E;
+}
+
+::ng-deep td{
+    font-size: 16px;
+}
+
+/* Striped Table */
+::ng-deep .p-datatable .p-datatable-tbody tr:nth-child(odd) {
+    background-color: #f4f4f4 !important; 
+}
+
+::ng-deep .p-datatable .p-datatable-tbody tr:nth-child(even) {
+    background-color: #ffffff !important; 
+}
+
+.filter-buttons-cont{
+    text-align: center;
+    padding: 15px;
+}
+
+.btn-all{
+    background-color: #F55287;
+}
+
+.btn-comp{
+    background-color: #7DC4C6;
+}
+
+.btn-pend{
+    background-color: #F0909E;
+
+}
+
+.btn-all , .btn-comp , .btn-pend{
+    margin: 5px;
+    color: white;
+    font-size: 20px !important;
+}
+
+.clickable-title {
+    color: #F0909E; 
+    text-decoration: none; 
+    font-weight: bold; 
+    cursor: pointer; 
+}
+
+.clickable-title:hover {
+    color: #7DC4C6;
+    text-decoration: underline; 
+}
+

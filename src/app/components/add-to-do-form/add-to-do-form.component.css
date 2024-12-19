@@ -1,0 +1,30 @@
+.add-section{
+    display: flex;
+    gap: 20px;
+    width: 70%;
+    margin: auto;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    border: 1px solid #ADD8E6;
+    padding: 15px;
+    border-radius: 20px;
+}
+  
+.add-section-l{
+    flex: 9;
+}
+
+.add-section-r{
+    flex: 1;
+}
+  
+.error-messages {
+    margin-top: 5px;
+}
+  
+.error-messages div {
+    color: red;
+    font-size: 14px;
+    line-height: 1.5;
+}
+

@@ -1,0 +1,36 @@
+<div class="filter-buttons-cont">
+<div class="filter-buttons">
+  <button class="btn btn-all" (click)="filterTodos('all')">All</button>
+  <button class="btn btn-pend" (click)="filterTodos('pending')">Pending</button>
+  <button class="btn btn-comp" (click)="filterTodos('completed')">Completed</button>
+</div>
+</div>
+
+<p-table [value]="filteredTodos" [responsive]="true" [paginator]="true" [rows]="5" [totalRecords]="filteredTodos.length" size="large" styleClass="custom-header-table">
+  <ng-template pTemplate="header">
+    <tr>
+      <th pSortableColumn="id">Task Number <p-sortIcon field="id"></p-sortIcon></th>
+      <th pSortableColumn="title">Task <p-sortIcon field="title"></p-sortIcon></th>
+      <th pSortableColumn="description">Description <p-sortIcon field="description"></p-sortIcon></th>
+      <th>Completed</th>
+      <th>Edit</th>
+      <th>Delete</th>
+    </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-item let-rowIndex="rowIndex">
+    <tr>
+      <td>{{ rowIndex + 1 }}</td>
+      <td class="clickable-title" [ngClass]="{'text-decoration-line-through': item.completed}"  [routerLink]="['/todos', item.id]">{{ item.title }}</td>
+      <td [ngClass]="{'text-decoration-line-through': item.completed}">{{ item.description }}</td>
+      <td>
+        <input type="checkbox" class="my-checkbox" [(ngModel)]="item.completed" name="completed" (change)="todoStatus.emit(item)" />
+      </td>
+      <td>
+        <button class="btn save-btn" (click)="editTask.emit(item)">Edit</button>
+      </td>
+      <td>
+        <button class="btn cancel-btn" (click)="deleteTask.emit(item.id)">Delete</button>
+      </td>
+    </tr>
+  </ng-template>
+</p-table>

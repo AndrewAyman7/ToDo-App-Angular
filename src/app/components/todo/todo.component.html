@@ -1,0 +1,24 @@
+<div>
+
+  <app-to-dos-header [title]="title"></app-to-dos-header>
+
+  <div class="container">
+
+    <app-add-to-do-form [newToDo]="newToDo" (addTask)="createToDo($event)"></app-add-to-do-form>
+    
+
+      <app-view-to-dos 
+        [todos]="todos" 
+        (todoStatus)="todoStatus($event)" 
+        (editTask)="editTodo($event)" 
+        (deleteTask)="deleteTodo($event)">
+      </app-view-to-dos>
+
+      <app-update-to-do 
+        [selectedTodo]="selectedTodo" 
+        (saveEdit)="updateTodo($event)" 
+        (cancel)="cancelEdit()">
+      </app-update-to-do>
+
+  </div>
+</div>

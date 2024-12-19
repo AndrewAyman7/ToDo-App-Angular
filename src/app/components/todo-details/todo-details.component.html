@@ -1,0 +1,18 @@
+<div class="object-container">
+    <div class="card">
+      <h2 class="card-title">{{ todo?.title }}</h2>
+      <div class="card-body">
+        <p>
+          <span class="label">Description | </span> <br/>
+          {{ todo?.description }}
+        </p> <br/>
+        <p>
+          <span class="label">Status | </span> <br/>
+          <label class="checkbox-container">
+            <input class="checkbox1" type="checkbox" [checked]="todo?.completed" disabled />
+            <span class="status-text">{{ todo?.completed ? 'Done' : 'Not Done' }}</span>
+          </label>
+        </p>
+      </div>
+    </div>
+  </div>

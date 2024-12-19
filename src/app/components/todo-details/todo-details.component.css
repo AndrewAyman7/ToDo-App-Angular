@@ -1,0 +1,63 @@
+.object-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f0909e, #7dc4c6);
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    border-radius: 12px;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.card-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: #F55287;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #F0909E;
+    padding-bottom: 8px;
+    text-align: center;
+}
+
+.card-body {
+    font-size: 22px;
+    line-height: 1.6;
+    color: #F0909E;
+}
+
+.card-body p {
+    margin: 12px 0;
+}
+
+.label {
+    font-weight: bold;
+    color: #F55287;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: default;
+}
+
+.checkbox1 {
+    width: 25px; 
+    height: 25px; 
+    cursor: pointer; 
+}
+
+.status-text {
+    font-weight: bold;
+    font-size: 18px;
+    color: #F0909E;
+    text-transform: capitalize;
+}
