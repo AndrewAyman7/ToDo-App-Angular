@@ -9,7 +9,6 @@ import { UpdateToDoComponent } from './components/update-to-do/update-to-do.comp
 import { ToastModule } from 'primeng/toast';
 import { bootstrapApplication } from '@angular/platform-browser';
 import { importProvidersFrom } from '@angular/core';
-import { MatSnackBar } from '@angular/material/snack-bar';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @Component({
@@ -22,11 +21,6 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 export class AppComponent {
   title = 'todo-list-app';
 
-  constructor(private snackBar: MatSnackBar) {}
-
-  showMessage() {
-    this.snackBar.open('Snackbar without animations!', 'Close', { duration: 3000 });
-  }
 }
 
 bootstrapApplication(AppComponent, {
